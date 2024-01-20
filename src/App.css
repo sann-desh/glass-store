@@ -1,0 +1,7 @@
+@tailwind base;
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+@tailwind components;
+@tailwind utilities;
