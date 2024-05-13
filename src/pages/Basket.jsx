@@ -5,10 +5,13 @@ import { storeContext } from "../contxt+reducer/Context";
 
 const Basket = () => {
   const { products, total } = useContext(storeContext);
+  const dataRetrieve = () => {
+    //
+  };
   return (
     <div>
       {/* {console.log(total)} */}
-      <Navbar />
+      <Navbar newData={dataRetrieve} />
       {/* {console.log(initialState)} */}
       <h1 className='text-center text-xl font-bold underline'>Basket Items</h1>
       <h4 className='text-end mr-20'>Total: $ {total.toFixed(2)}</h4>
